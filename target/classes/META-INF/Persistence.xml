@@ -1,0 +1,36 @@
+
+    <persistence xmlns="https://jakarta.ee/xml/ns/persistence" 
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 version="3.0" 
+                 xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+        <persistence-unit name="uc15-PU">
+         <class>com.mycompany.unidade15.EstoqueControle</class>
+         <class>com.mycompany.unidade15.Unidade15</class>
+         <class>com.mycompany.unidade15.JPAUtil</class>
+         <class>com.mycompany.unidade15.UI.fornecedores.CadastroFornecedor</class>
+         <class>com.mycompany.unidade15.UI.fornecedores.FornecedorLista</class>
+         <class>com.mycompany.unidade15.UI.fornecedores.fornecedores</class>
+         <class>com.mycompany.unidade15.UI.fornecedores.fornecedoresDAO</class>
+         <class>com.mycompany.unidade15.UI.funcionarios.CadastroTurno</class>
+         <class>com.mycompany.unidade15.UI.funcionarios.FuncionariosCadastro</class>
+         <class>com.mycompany.unidade15.UI.funcionarios.ListaTurno</class>
+         <class>com.mycompany.unidade15.UI.produto.CadastroProduto</class>
+         <class>com.mycompany.unidade15.UI.produto.listaProduto</class>
+         <class>com.mycompany.unidade15.UI.vendas.vendasCadastro</class>
+         <class>com.mycompany.unidade15.UI.vendas.vendasLista</class>
+         <class>com.mycompany.unidade15.UI.funcionarios.funcionario</class>
+         <class>com.mycompany.unidade15.UI.funcionarios.turnos</class>
+         <class>com.mycompany.unidade15.UI.produto.produto</class>
+         <class>com.mycompany.unidade15.UI.vendas.vendas</class>  
+     <exclude-unlisted-classes>false</exclude-unlisted-classes>
+     
+        <properties>
+          <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+          <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost/uc15" />
+          <property name="jakarta.persistence.jdbc.user" value="root" />
+          <property name="jakarta.persistence.jdbc.password" value="dpul1234" />
+        
+          
+        </properties>
+      </persistence-unit>
+                 </persistence> 
